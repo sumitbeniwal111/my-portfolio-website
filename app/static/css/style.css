@@ -1,0 +1,382 @@
+/* static/css/style.css */
+
+/* Basic Reset & Body Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif; /* Basic sans-serif font */
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f8f8; /* Light stone background */
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header & Navigation */
+header {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a, .mobile-nav-links a {
+    color: #555;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover, .mobile-nav-links a:hover {
+    color: #e67e22; /* Orange hover */
+}
+
+.mobile-nav-links {
+    display: none; /* Hidden by default, shown by JS for mobile */
+    text-align: center;
+    background-color: #eee;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+}
+
+.mobile-nav-links a {
+    display: block;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.mobile-nav-links a:last-child {
+    border-bottom: none;
+}
+
+.menu-button {
+    display: none; /* Hidden on desktop */
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #333;
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide desktop nav links */
+    }
+    .menu-button {
+        display: block; /* Show mobile menu button */
+    }
+}
+
+/* Section Styling */
+section {
+    padding: 80px 0; /* Default padding for sections */
+    opacity: 0; /* For fade-in animation */
+    transform: translateY(20px); /* For fade-in animation */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-header h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.section-header p {
+    font-size: 18px;
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Hero Section */
+.hero {
+    min-height: calc(100vh - 100px); /* Adjust based on header height */
+    display: flex;
+    align-items: center;
+    padding: 0 20px; /* Ensure content is not too wide on large screens */
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    font-size: 30px;
+    color: #e67e22; /* Orange accent */
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #666;
+    max-width: 600px;
+}
+
+.hero-buttons {
+    margin-top: 40px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+}
+
+/* Buttons */
+.button {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    text-align: center;
+    white-space: nowrap; /* Prevent text wrapping inside button */
+}
+
+.button-primary {
+    background-color: #e67e22; /* Orange */
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(230, 126, 34, 0.3);
+}
+
+.button-primary:hover {
+    background-color: #d35400; /* Darker orange */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(230, 126, 34, 0.4);
+}
+
+.button-secondary {
+    background-color: #ddd; /* Light gray */
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+.button-secondary:hover {
+    background-color: #ccc;
+    transform: translateY(-2px);
+}
+
+/* About Section */
+.about-section {
+    background-color: #fff; /* White background */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    padding: 50px;
+}
+
+.about-content {
+    /* No grid needed as skills section is removed, adjust as needed */
+    display: block; /* Changed from grid */
+    max-width: 800px; /* Constrain width for better readability */
+    margin: 0 auto; /* Center the content */
+}
+
+/* New class for the about text when it's full width */
+.about-text-full {
+    width: 100%; /* Ensure it takes full available width */
+}
+
+.about-text-full h3 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-text-full p {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* Projects Section */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.project-card h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    color: #555;
+}
+
+.projects-button {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Contact Section */
+.contact-section {
+    padding-bottom: 80px; /* Add some padding at the bottom */
+}
+
+.contact-form-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    max-width: 600px;
+    margin: 0 auto 50px auto;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #444;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: calc(100% - 20px); /* Account for padding */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f5f5f5;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #e67e22; /* Orange focus ring */
+    box-shadow: 0 0 0 3px rgba(230, 126, 34, 0.2);
+    outline: none;
+}
+
+.form-group textarea {
+    resize: vertical; /* Allow vertical resizing */
+    min-height: 120px;
+}
+
+.form-submit-button {
+    width: 100%;
+}
+
+.social-media {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.social-media p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.social-icon {
+    font-size: 36px; /* Use emojis for simplicity instead of icons */
+    text-decoration: none;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #e67e22; /* Orange hover */
+}
+
+/* Footer */
+footer {
+    background-color: #eee; /* Light stone/gray */
+    border-top: 1px solid #ddd;
+    padding: 30px 0;
+    text-align: center;
+    color: #666;
+    font-size: 15px;
+}
+
+/* Success Message Page */
+.success-message-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    text-align: center;
+    padding: 20px;
+}
+
+.success-icon {
+    font-size: 80px;
+    color: #27ae60; /* Green checkmark */
+    margin-bottom: 20px;
+}
+
+.success-message-container h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.success-message-container p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}

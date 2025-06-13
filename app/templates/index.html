@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumit Beniwal | Aspiring Software Developer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <header id="header">
+        <nav class="container">
+            <a href="#home" class="logo">Sumit Beniwal</a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button id="mobile-menu-button" class="menu-button">
+                ☰
+            </button>
+        </nav>
+        <div id="mobile-menu" class="mobile-nav-links">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="home" class="hero section-fade-in">
+            <div class="hero-content">
+                <h1>Hi, I'm Sumit Beniwal</h1>
+                <h2>An Aspiring Software Developer</h2>
+                <p>
+                    I'm an Electronics and Communication Engineering student at IIIT Surat. I'm driven by a passion for solving real-world problems through innovative technology, and I constantly explore new tools and frameworks to build impactful solutions.
+                </p>
+                <div class="hero-buttons">
+                    <a href="https://drive.google.com/file/d/1HIp9NsE4SvRia3XwJ1kh4F562W0KJigg/view?usp=sharing" target="_blank" class="button button-primary">
+                        View Resume &rarr;
+                    </a>
+                    <a href="#projects" class="button button-secondary">
+                        See My Work
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section section-fade-in">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <p>A brief introduction to my background.</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text-full"> {# Changed class to reflect full width #}
+                    <h3>Who I Am</h3>
+                    <p>
+                        I’m Sumit Beniwal, a dedicated B.Tech student in Electronics and Communication Engineering at IIIT Surat, with a strong foundation in software development and hands-on experience across diverse projects. My skills empower me to approach challenges from both technical and creative perspectives.
+                    </p>
+                    <p>
+                        From building full-stack web applications with Flask to developing AI-powered language translators using TensorFlow, I focus on crafting smart, user-friendly solutions. I enjoy blending clean design, problem-solving, and real-world functionality in everything I build.
+                    </p>
+                    <p>
+                        I’ve also taken up leadership roles, coordinating campus events that strengthened my collaboration and organizational abilities. I'm continuously improving my skills through consistent practice and competitive programming on platforms like LeetCode, GFG, and CodeChef.
+                    </p>
+                    <p>
+                        I'm always excited to learn, build, and collaborate on impactful tech projects that push boundaries and solve real-world problems.Let’s connect and build something cool together! 🚀
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section section-fade-in">
+            <div class="section-header">
+                <h2>My Projects</h2>
+                <p>Here are a few projects I've worked on. Feel free to check them out.</p>
+            </div>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Car Price Prediction Model</h3>
+                    <p>
+                        Developed a machine learning model to predict car prices. Involved comprehensive data preprocessing, exploratory data analysis, and implementation of regression algorithms using Pandas, Scikit-learn, and Matplotlib for accurate predictions.
+                    </p>
+                </div>
+                <div class="project-card">
+                    <h3>Blackjack Game Using Python</h3>
+                    <p>
+                        Developed an interactive Blackjack game using Object-Oriented Programming (OOP) in Python. Simulates a realistic casino experience with deck shuffling, betting options, and dynamic player/dealer interactions.
+                    </p>
+                </div>
+                <div class="project-card">
+                    <h3>Sorting Algorithm Visualizer</h3>
+                    <p>
+                        A Python project to visualize Bubble, Selection, and Insertion Sort. Users can input an array and watch the sorting process demonstrated through dynamic bar charts using Matplotlib, showcasing data visualization skills.
+                    </p>
+                </div>
+                <div class="project-card">
+                    <h3>Tic Tac Toe Game Using Python</h3>
+                    <p>
+                        Created a two-player Tic Tac Toe game where players alternate turns. Implemented win/tie detection, random player selection for fairness, and a replay option. Ensures smooth gameplay with clear prompts.
+                    </p>
+                </div>
+            </div>
+            <div class="projects-button">
+                <a href="https://github.com/sumitbeniwal111" target="_blank" class="button button-primary">
+                    More on GitHub <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section section-fade-in">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Have a question or want to work together? Drop me a message!</p>
+            </div>
+            <div class="contact-form-container">
+                <form id="contact-form" action="{{ url_for('main.contact') }}" method="post" novalidate>
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="button button-primary form-submit-button">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+
+            <div class="social-media">
+                <p>Or connect with me on social media:</p>
+                <div class="social-links">
+                    <a href="https://wa.me/6375711968" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                    <a href="mailto:sumitbeniwal906@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+                    <a href="https://github.com/sumitbeniwal111" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/sumitbeniwal1/" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Sumit Beniwal. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
