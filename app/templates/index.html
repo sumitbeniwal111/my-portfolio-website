@@ -4,42 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sumit Beniwal | Aspiring Software Developer</title>
+
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
+
 <body>
 
+    <!-- ================= HEADER ================= -->
     <header id="header">
         <nav class="container">
             <a href="#home" class="logo">Sumit Beniwal</a>
+
             <div class="nav-links">
                 <a href="#about">About</a>
+                <a href="#experience">Experience</a>
                 <a href="#projects">Projects</a>
+                <a href="#achievements">Achievements</a>
                 <a href="#contact">Contact</a>
             </div>
-            <button id="mobile-menu-button" class="menu-button">
-                ☰
-            </button>
+
+            <button id="mobile-menu-button" class="menu-button">☰</button>
         </nav>
+
         <div id="mobile-menu" class="mobile-nav-links">
             <a href="#about">About</a>
+            <a href="#experience">Experience</a>
             <a href="#projects">Projects</a>
+            <a href="#achievements">Achievements</a>
             <a href="#contact">Contact</a>
         </div>
     </header>
 
+    <!-- ================= MAIN ================= -->
     <main class="container">
+
+        <!-- ===== HERO ===== -->
         <section id="home" class="hero section-fade-in">
             <div class="hero-content">
                 <h1>Hi, I'm Sumit Beniwal</h1>
                 <h2>An Aspiring Software Developer</h2>
                 <p>
-                    I'm an Electronics and Communication Engineering student at IIIT Surat. I'm driven by a passion for solving real-world problems through innovative technology, and I constantly explore new tools and frameworks to build impactful solutions.
+                    Electronics and Communication Engineering student at IIIT Surat, skilled in C++, Python, and DSA,
+                    with experience in backend and data-driven projects. Passionate about building scalable solutions
+                    and solving real-world problems using technology.
                 </p>
+
                 <div class="hero-buttons">
-                    <a href="https://drive.google.com/file/d/1HIp9NsE4SvRia3XwJ1kh4F562W0KJigg/view?usp=sharing" target="_blank" class="button button-primary">
-                        View Resume &rarr;
+                    <a href="https://drive.google.com/file/d/1ZD3s2hU1NTnNpgrvxqLjFWM5sWZeRK0H/view?usp=sharing"
+                       target="_blank"
+                       class="button button-primary">
+                        View Resume →
                     </a>
+
                     <a href="#projects" class="button button-secondary">
                         See My Work
                     </a>
@@ -47,61 +64,80 @@
             </div>
         </section>
 
+        <!-- ===== ABOUT ===== -->
         <section id="about" class="about-section section-fade-in">
             <div class="section-header">
                 <h2>About Me</h2>
-                <p>A brief introduction to my background.</p>
             </div>
+
             <div class="about-content">
-                <div class="about-text-full"> {# Changed class to reflect full width #}
+                <div class="about-text-full">
                     <h3>Who I Am</h3>
+
                     <p>
-                        I’m Sumit Beniwal, a dedicated B.Tech student in Electronics and Communication Engineering at IIIT Surat, with a strong foundation in software development and hands-on experience across diverse projects. My skills empower me to approach challenges from both technical and creative perspectives.
+                        I’m <strong>Sumit Beniwal</strong>, a B.Tech student in <strong>Electronics and Communication Engineering</strong> at <strong>IIIT Surat</strong> with a strong interest in software development and problem-solving. I have a solid foundation in <strong>C++, Python, SQL</strong>, and core computer science concepts like <strong>Data Structures & Algorithms</strong> and <strong>Object-Oriented Programming</strong>.
                     </p>
+
                     <p>
-                        From building full-stack web applications with Flask to developing AI-powered language translators using TensorFlow, I focus on crafting smart, user-friendly solutions. I enjoy blending clean design, problem-solving, and real-world functionality in everything I build.
+                        I have hands-on experience in <strong>backend development</strong>, having worked as a <strong>Backend API Intern at MultiTV Tech Solutions</strong>, where I contributed to scalable subscriber management systems for OTT platforms. My work involved building and improving Flask-based APIs, managing large datasets in PostgreSQL, and ensuring smooth handling of high user traffic.
                     </p>
+
                     <p>
-                        I’ve also taken up leadership roles, coordinating campus events that strengthened my collaboration and organizational abilities. I'm continuously improving my skills through consistent practice and competitive programming on platforms like LeetCode, GFG, and CodeChef.
+                        I enjoy building practical, real-world projects. Some of my key work includes developing <strong>InterViewPoint</strong>, a Flask-based web portal for sharing and moderating interview experiences, and a <strong>Mini Metro Route Planner</strong> in C++ that uses Dijkstra’s Algorithm to compute optimal routes. These projects strengthened my understanding of system design, backend logic, and algorithmic thinking.
                     </p>
+
                     <p>
-                        I'm always excited to learn, build, and collaborate on impactful tech projects that push boundaries and solve real-world problems.Let’s connect and build something cool together! 🚀
+                        Beyond academics and projects, I actively practice competitive programming and have solved <strong>500+ problems</strong> across platforms like LeetCode, GFG, and CodeChef, and I am now seeking a strong opportunity where I can grow professionally, apply my problem-solving skills, and contribute to real-world software systems. 
                     </p>
                 </div>
             </div>
         </section>
 
+        <!-- ===== EXPERIENCE ===== -->
+        <section id="experience" class="experience-section section-fade-in">
+            <div class="section-header">
+                <h2>Internship Experience</h2>
+                <p>Hands-on industry experience building real-world backend systems.</p>
+            </div>
+
+            <div class="experience-card">
+                <h3>Backend API Intern</h3>
+                <h4>MultiTV Tech Solutions Pvt. Ltd. | May 2025 – July 2025</h4>
+
+                <ul>
+                    <li>Developed and enhanced RESTful APIs in Flask to handle high user traffic.</li>
+                    <li>Managed subscriber data in PostgreSQL for fast and reliable lookups.</li>
+                    <li>Optimized database queries and backend logic for improved performance.</li>
+                    <li>Collaborated with senior engineers on production-ready backend features.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ===== PROJECTS ===== -->
         <section id="projects" class="projects-section section-fade-in">
             <div class="section-header">
                 <h2>My Projects</h2>
-                <p>Here are a few projects I've worked on. Feel free to check them out.</p>
+                <p>Some of the key projects I’ve built, focused on real-world problem solving.</p>
             </div>
+
             <div class="project-grid">
                 <div class="project-card">
-                    <h3>Car Price Prediction Model</h3>
+                    <h3>InterViewPoint – Interview Experience Portal</h3>
                     <p>
-                        Developed a machine learning model to predict car prices. Involved comprehensive data preprocessing, exploratory data analysis, and implementation of regression algorithms using Pandas, Scikit-learn, and Matplotlib for accurate predictions.
+                        A Flask-based web portal for sharing and moderating interview experiences,
+                        featuring role-based authentication, admin workflows, and email verification.
                     </p>
                 </div>
+
                 <div class="project-card">
-                    <h3>Blackjack Game Using Python</h3>
+                    <h3>Mini Metro Route Planner</h3>
                     <p>
-                        Developed an interactive Blackjack game using Object-Oriented Programming (OOP) in Python. Simulates a realistic casino experience with deck shuffling, betting options, and dynamic player/dealer interactions.
-                    </p>
-                </div>
-                <div class="project-card">
-                    <h3>Sorting Algorithm Visualizer</h3>
-                    <p>
-                        A Python project to visualize Bubble, Selection, and Insertion Sort. Users can input an array and watch the sorting process demonstrated through dynamic bar charts using Matplotlib, showcasing data visualization skills.
-                    </p>
-                </div>
-                <div class="project-card">
-                    <h3>Tic Tac Toe Game Using Python</h3>
-                    <p>
-                        Created a two-player Tic Tac Toe game where players alternate turns. Implemented win/tie detection, random player selection for fairness, and a replay option. Ensures smooth gameplay with clear prompts.
+                        A C++ CLI application that simulates the Delhi Metro system using graph
+                        data structures and Dijkstra’s Algorithm for optimal route planning.
                     </p>
                 </div>
             </div>
+
             <div class="projects-button">
                 <a href="https://github.com/sumitbeniwal111" target="_blank" class="button button-primary">
                     More on GitHub <i class="fab fa-github"></i>
@@ -109,31 +145,88 @@
             </div>
         </section>
 
+        <!-- ===== ACHIEVEMENTS ===== -->
+        <section id="achievements" class="achievements-section section-fade-in">
+            <div class="section-header">
+                <h2>Achievements</h2>
+                <p>Milestones that reflect my competitive programming and problem-solving journey.</p>
+            </div>
+
+            <div class="achievements-grid">
+
+                <div class="achievement-card">
+                    <h3>
+                        National Semi-Finalist – Flipkart GRiD 7.0
+                        <a href="https://drive.google.com/file/d/1Vn8CFm8L6qze98Yl01On9ZcFlLN5zhxK/view" target="_blank">
+                            (Certificate)
+                        </a>
+                    </h3>
+                    <p>
+                        Recognized as a top performer for problem-solving and innovation at a national-level competition.
+                    </p>
+                </div>
+
+                <div class="achievement-card">
+                    <h3>Qualified TCS CodeVita</h3>
+                    <p>
+                        Successfully qualified TCS CodeVita, demonstrating strong algorithmic and competitive coding skills.
+                    </p>
+                </div>
+
+                <div class="achievement-card">
+                    <h3>Rank 1 – Naukri Campus EROH Coding Challenge</h3>
+                    <p>
+                        Achieved Rank 1 at the college level for two consecutive years, showcasing consistent excellence.
+                    </p>
+                </div>
+
+                <div class="achievement-card">
+                    <h3>
+                        500+ Problems Solved · LeetCode Knight
+                        <a href="https://leetcode.com/u/Sumitbeniwal111/" target="_blank">(Profile)</a>
+                    </h3>
+                    <p>
+                        Solved 500+ problems across platforms with a maximum LeetCode rating of <strong>1898</strong>.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ===== CONTACT ===== -->
         <section id="contact" class="contact-section section-fade-in">
             <div class="section-header">
                 <h2>Get In Touch</h2>
                 <p>Have a question or want to work together? Drop me a message!</p>
             </div>
+
             <div class="contact-form-container">
-                <form id="contact-form" action="{{ url_for('main.contact') }}" method="post" novalidate>
+                <form id="contact-form" onsubmit="sendToWhatsApp(event)">
                     <div class="form-group">
                         <label for="name">Your Name</label>
-                        <input type="text" id="name" name="name" required>
+                        <input type="text" id="name" required>
                     </div>
+
                     <div class="form-group">
                         <label for="email">Your Email</label>
-                        <input type="email" id="email" name="email" required>
+                        <input type="email" id="email" required>
                     </div>
+
+                    <div class="form-group">
+                        <label for="phone">Your Phone Number</label>
+                        <input type="tel" id="phone" required>
+                    </div>
+
                     <div class="form-group">
                         <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <textarea id="message" rows="5" required></textarea>
                     </div>
+
                     <button type="submit" class="button button-primary form-submit-button">
                         Send Message
                     </button>
                 </form>
             </div>
-
             <div class="social-media">
                 <p>Or connect with me on social media:</p>
                 <div class="social-links">
@@ -144,14 +237,20 @@
                 </div>
             </div>
         </section>
+
     </main>
 
+    <!-- ================= FOOTER ================= -->
     <footer>
         <div class="container">
             <p>&copy; 2024 Sumit Beniwal. All rights reserved.</p>
         </div>
     </footer>
 
+    <!-- Toast -->
+    <div id="toast"></div>
+
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
 </body>
 </html>
