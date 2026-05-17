@@ -115,13 +115,3 @@ You can update the content from these files:
 - GitHub: [github.com/sumitbeniwal111](https://github.com/sumitbeniwal111)
 - LeetCode: [leetcode.com/u/Sumitbeniwal111](https://leetcode.com/u/Sumitbeniwal111/)
 
-## Future Improvements
-
-- Add deployment instructions for Render or Vercel
-- Add project screenshots
-- Add downloadable resume button with a hosted PDF
-- Move portfolio content into structured Python or JSON data for easier updates
-
-## License
-
-This project is open for learning and personal inspiration. Please do not copy it directly without permission.
