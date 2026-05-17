@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sumit Beniwal | Aspiring Software Developer</title>
+    <title>Sumit Beniwal | Backend Engineer Portfolio</title>
 
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -11,7 +11,6 @@
 
 <body>
 
-    <!-- ================= HEADER ================= -->
     <header id="header">
         <nav class="container">
             <a href="#home" class="logo">Sumit Beniwal</a>
@@ -20,6 +19,7 @@
                 <a href="#about">About</a>
                 <a href="#experience">Experience</a>
                 <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
                 <a href="#achievements">Achievements</a>
                 <a href="#contact">Contact</a>
             </div>
@@ -31,40 +31,80 @@
             <a href="#about">About</a>
             <a href="#experience">Experience</a>
             <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
             <a href="#achievements">Achievements</a>
             <a href="#contact">Contact</a>
         </div>
     </header>
 
-    <!-- ================= MAIN ================= -->
     <main class="container">
-
-        <!-- ===== HERO ===== -->
         <section id="home" class="hero section-fade-in">
             <div class="hero-content">
                 <h1>Hi, I'm Sumit Beniwal</h1>
-                <h2>An Aspiring Software Developer</h2>
+                <h2>Backend Engineer Intern building AI-powered products</h2>
                 <p>
-                    Electronics and Communication Engineering student at IIIT Surat, skilled in C++, Python, and DSA,
-                    with experience in backend and data-driven projects. Passionate about building scalable solutions
-                    and solving real-world problems using technology.
+                    B.Tech student at IIIT Surat with hands-on experience in backend APIs, computer vision,
+                    and production AI workflows. I enjoy building systems that turn complex problems into
+                    practical products, from video intelligence pipelines to student-facing web platforms.
                 </p>
 
                 <div class="hero-buttons">
                     <a href="https://drive.google.com/file/d/1ZD3s2hU1NTnNpgrvxqLjFWM5sWZeRK0H/view?usp=sharing"
                        target="_blank"
+                       rel="noopener noreferrer"
                        class="button button-primary">
-                        View Resume →
+                        View Resume
                     </a>
 
                     <a href="#projects" class="button button-secondary">
-                        See My Work
+                        Explore Projects
                     </a>
+                </div>
+
+                <div class="hero-links">
+                    <a href="https://github.com/sumitbeniwal111" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://www.linkedin.com/in/sumitbeniwal1/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a href="https://leetcode.com/u/Sumitbeniwal111/" target="_blank" rel="noopener noreferrer">LeetCode</a>
+                </div>
+            </div>
+
+            <div class="hero-highlights">
+                <div class="highlight-card">
+                    <span class="highlight-value">8.39</span>
+                    <span class="highlight-label">CGPA at IIIT Surat</span>
+                </div>
+                <div class="highlight-card">
+                    <span class="highlight-value">2</span>
+                    <span class="highlight-label">Internships at MultiTV</span>
+                </div>
+                <div class="highlight-card">
+                    <span class="highlight-value">600+</span>
+                    <span class="highlight-label">Problems Solved</span>
                 </div>
             </div>
         </section>
 
-        <!-- ===== ABOUT ===== -->
+        <section class="snapshot-section section-fade-in">
+            <div class="snapshot-grid">
+                <div class="snapshot-card">
+                    <h3>Current Role</h3>
+                    <p>Software Backend Engineer Intern at MultiTV Tech Solutions, building computer vision and AI workflows for media products.</p>
+                </div>
+                <div class="snapshot-card">
+                    <h3>Education</h3>
+                    <p>B.Tech in Electronics and Communication Engineering at IIIT Surat, 2022 - Present.</p>
+                </div>
+                <div class="snapshot-card">
+                    <h3>Core Strength</h3>
+                    <p>Backend engineering with Python, FastAPI, Flask, PostgreSQL, OpenCV, and production-oriented problem solving.</p>
+                </div>
+                <div class="snapshot-card">
+                    <h3>Competitive Edge</h3>
+                    <p>National Semi-Finalist at Flipkart GRiD 7.0 with a max LeetCode rating of 1900.</p>
+                </div>
+            </div>
+        </section>
+
         <section id="about" class="about-section section-fade-in">
             <div class="section-header">
                 <h2>About Me</h2>
@@ -75,129 +115,206 @@
                     <h3>Who I Am</h3>
 
                     <p>
-                        I’m <strong>Sumit Beniwal</strong>, a B.Tech student in <strong>Electronics and Communication Engineering</strong> at <strong>IIIT Surat</strong> with a strong interest in software development and problem-solving. I have a solid foundation in <strong>C++, Python, SQL</strong>, and core computer science concepts like <strong>Data Structures & Algorithms</strong> and <strong>Object-Oriented Programming</strong>.
+                        I'm <strong>Sumit Beniwal</strong>, a B.Tech student in <strong>Electronics and Communication Engineering</strong>
+                        at <strong>IIIT Surat</strong> who enjoys building backend systems and AI-assisted products that solve
+                        real user problems.
                     </p>
 
                     <p>
-                        I have hands-on experience in <strong>backend development</strong>, having worked as a <strong>Backend API Intern at MultiTV Tech Solutions</strong>, where I contributed to scalable subscriber management systems for OTT platforms. My work involved building and improving Flask-based APIs, managing large datasets in PostgreSQL, and ensuring smooth handling of high user traffic.
+                        My recent work at <strong>MultiTV Tech Solutions</strong> has focused on building production-ready systems
+                        for <strong>moment extraction</strong>, <strong>face recognition</strong>, <strong>content moderation</strong>,
+                        and a <strong>document chatbot</strong> powered by Google Vertex AI and FastAPI. That mix of backend work,
+                        applied machine learning, and deployment-oriented thinking is the kind of engineering work I want to keep doing.
                     </p>
 
                     <p>
-                        I enjoy building practical, real-world projects. Some of my key work includes developing <strong>InterViewPoint</strong>, a Flask-based web portal for sharing and moderating interview experiences, and a <strong>Mini Metro Route Planner</strong> in C++ that uses Dijkstra’s Algorithm to compute optimal routes. These projects strengthened my understanding of system design, backend logic, and algorithmic thinking.
-                    </p>
-
-                    <p>
-                        Beyond academics and projects, I actively practice competitive programming and have solved <strong>500+ problems</strong> across platforms like LeetCode, GFG, and CodeChef, and I am now seeking a strong opportunity where I can grow professionally, apply my problem-solving skills, and contribute to real-world software systems. 
+                        Before that, I worked on subscriber management APIs for an OTT platform and built personal projects like
+                        <strong>InterViewPoint</strong> and a <strong>Mini Metro Route Planner</strong>. Across internships,
+                        projects, and competitive programming, I keep coming back to the same goal: write clean systems, reason
+                        clearly, and ship work that is useful.
                     </p>
                 </div>
             </div>
         </section>
 
-        <!-- ===== EXPERIENCE ===== -->
         <section id="experience" class="experience-section section-fade-in">
             <div class="section-header">
-                <h2>Internship Experience</h2>
-                <p>Hands-on industry experience building real-world backend systems.</p>
+                <h2>Experience</h2>
+                <p>Industry experience across backend APIs, computer vision pipelines, and AI-driven products.</p>
             </div>
 
-            <div class="experience-card">
-                <h3>Backend API Intern</h3>
-                <h4>MultiTV Tech Solutions Pvt. Ltd. | May 2025 – July 2025</h4>
+            <div class="experience-list">
+                <div class="experience-card">
+                    <h3>Software Backend Engineer Intern</h3>
+                    <h4>MultiTV Tech Solutions Pvt. Ltd. | Gurugram, Haryana | Jan 2026 - Present</h4>
 
-                <ul>
-                    <li>Developed and enhanced RESTful APIs in Flask to handle high user traffic.</li>
-                    <li>Managed subscriber data in PostgreSQL for fast and reliable lookups.</li>
-                    <li>Optimized database queries and backend logic for improved performance.</li>
-                    <li>Collaborated with senior engineers on production-ready backend features.</li>
-                </ul>
+                    <ul>
+                        <li>Developed a moment extraction system using Python, OpenCV, and YOLO to autonomously generate video highlights and reduce editing time by 95%.</li>
+                        <li>Engineered an event photo face recognition pipeline with InsightFace and NumPy, achieving 98% accuracy while organizing thousands of event photos.</li>
+                        <li>Architected an end-to-end explicit content detection and blurring pipeline to automate video moderation and support platform safety standards.</li>
+                        <li>Built and deployed an AI chatbot using Google Vertex AI and FastAPI to answer questions from government documents for Anganwadi workers.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-card">
+                    <h3>Backend API Intern</h3>
+                    <h4>MultiTV Tech Solutions Pvt. Ltd. | Gurugram, Haryana | May 2025 - July 2025</h4>
+
+                    <ul>
+                        <li>Designed and developed RESTful API endpoints for the subscriber management system of an OTT platform serving 1,000+ active users.</li>
+                        <li>Tested and debugged backend APIs to improve reliability across the subscription module.</li>
+                        <li>Worked closely with backend logic and service integrations to keep subscriber workflows smooth and production-ready.</li>
+                    </ul>
+                </div>
             </div>
         </section>
 
-        <!-- ===== PROJECTS ===== -->
         <section id="projects" class="projects-section section-fade-in">
             <div class="section-header">
-                <h2>My Projects</h2>
-                <p>Some of the key projects I’ve built, focused on real-world problem solving.</p>
+                <h2>Projects</h2>
+                <p>Projects that reflect my interest in backend systems, clean workflows, and practical problem solving.</p>
             </div>
 
             <div class="project-grid">
                 <div class="project-card">
-                    <h3>InterViewPoint – Interview Experience Portal</h3>
+                    <h3>InterViewPoint Web Portal</h3>
+                    <p class="project-stack">Flask, Python, PostgreSQL, SQLAlchemy, HTML, CSS, Jinja2, Flask-Mail</p>
                     <p>
-                        A Flask-based web portal for sharing and moderating interview experiences,
-                        featuring role-based authentication, admin workflows, and email verification.
+                        A full-stack portal for collecting and moderating interview experiences, adopted by 200+ students.
                     </p>
+                    <ul class="project-details">
+                        <li>Centralized interview experience sharing with moderation workflows and student-first usability.</li>
+                        <li>Implemented admin-student authentication with RBAC and personalized dashboards.</li>
+                        <li>Built self-registration and password reset flows that supported a 99% self-onboarding rate.</li>
+                    </ul>
                 </div>
 
                 <div class="project-card">
                     <h3>Mini Metro Route Planner</h3>
+                    <p class="project-stack">C++, Graphs, Dijkstra's Algorithm, CLI</p>
                     <p>
-                        A C++ CLI application that simulates the Delhi Metro system using graph
-                        data structures and Dijkstra’s Algorithm for optimal route planning.
+                        A command-line metro planner that models a 20+ station network and computes optimal routes in under a second.
                     </p>
+                    <ul class="project-details">
+                        <li>Implemented graph-based route planning with Dijkstra's algorithm.</li>
+                        <li>Included interchange alerts and route guidance for better decision making.</li>
+                        <li>Designed a menu-driven CLI for station browsing, route planning, and map exploration.</li>
+                    </ul>
                 </div>
             </div>
 
             <div class="projects-button">
-                <a href="https://github.com/sumitbeniwal111" target="_blank" class="button button-primary">
+                <a href="https://github.com/sumitbeniwal111" target="_blank" rel="noopener noreferrer" class="button button-primary">
                     More on GitHub <i class="fab fa-github"></i>
                 </a>
             </div>
         </section>
 
-        <!-- ===== ACHIEVEMENTS ===== -->
-        <section id="achievements" class="achievements-section section-fade-in">
+        <section id="skills" class="skills-section section-fade-in">
             <div class="section-header">
-                <h2>Achievements</h2>
-                <p>Milestones that reflect my competitive programming and problem-solving journey.</p>
+                <h2>Technical Skills</h2>
+                <p>The tools and concepts I use most across backend, AI, and problem-solving work.</p>
             </div>
 
-            <div class="achievements-grid">
-
-                <div class="achievement-card">
-                    <h3>
-                        National Semi-Finalist – Flipkart GRiD 7.0
-                        <a href="https://drive.google.com/file/d/1Vn8CFm8L6qze98Yl01On9ZcFlLN5zhxK/view" target="_blank">
-                            (Certificate)
-                        </a>
-                    </h3>
-                    <p>
-                        Recognized as a top performer for problem-solving and innovation at a national-level competition.
-                    </p>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                    </div>
                 </div>
 
-                <div class="achievement-card">
-                    <h3>Qualified TCS CodeVita</h3>
-                    <p>
-                        Successfully qualified TCS CodeVita, demonstrating strong algorithmic and competitive coding skills.
-                    </p>
+                <div class="skill-card">
+                    <h3>Frameworks</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">FastAPI</span>
+                        <span class="skill-tag">SQLAlchemy</span>
+                    </div>
                 </div>
 
-                <div class="achievement-card">
-                    <h3>Rank 1 – Naukri Campus EROH Coding Challenge</h3>
-                    <p>
-                        Achieved Rank 1 at the college level for two consecutive years, showcasing consistent excellence.
-                    </p>
+                <div class="skill-card">
+                    <h3>AI / ML</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">OpenCV</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">Prompt Engineering</span>
+                        <span class="skill-tag">RAG Chatbot</span>
+                        <span class="skill-tag">Vertex AI</span>
+                    </div>
                 </div>
 
-                <div class="achievement-card">
-                    <h3>
-                        500+ Problems Solved · LeetCode Knight
-                        <a href="https://leetcode.com/u/Sumitbeniwal111/" target="_blank">(Profile)</a>
-                    </h3>
-                    <p>
-                        Solved 500+ problems across platforms with a maximum LeetCode rating of <strong>1898</strong>.
-                    </p>
+                <div class="skill-card">
+                    <h3>Databases</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MySQL</span>
+                    </div>
                 </div>
 
+                <div class="skill-card">
+                    <h3>Tools & Cloud</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Google Cloud</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Core Concepts</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">DSA</span>
+                        <span class="skill-tag">OOP</span>
+                        <span class="skill-tag">Operating Systems</span>
+                        <span class="skill-tag">REST APIs</span>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- ===== CONTACT ===== -->
+        <section id="achievements" class="achievements-section section-fade-in">
+            <div class="section-header">
+                <h2>Achievements</h2>
+                <p>Milestones that reflect my consistency in problem solving and engineering growth.</p>
+            </div>
+
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <h3>
+                        National Semi-Finalist, Flipkart GRiD 7.0
+                        <a href="https://drive.google.com/file/d/1Vn8CFm8L6qze98Yl01On9ZcFlLN5zhxK/view" target="_blank" rel="noopener noreferrer">
+                            (Certificate)
+                        </a>
+                    </h3>
+                    <p>Recognized as a top performer in problem solving and innovation at a national-level engineering competition.</p>
+                </div>
+
+                <div class="achievement-card">
+                    <h3>400+ Coding Problems Solved</h3>
+                    <p>Built strong algorithmic fundamentals through consistent practice across LeetCode and other coding platforms.</p>
+                </div>
+
+                <div class="achievement-card">
+                    <h3>
+                        LeetCode Max Rating: 1900
+                        <a href="https://leetcode.com/u/Sumitbeniwal111/" target="_blank" rel="noopener noreferrer">(Profile)</a>
+                    </h3>
+                    <p>Competitive programming has sharpened my ability to reason under constraints and design efficient solutions.</p>
+                </div>
+            </div>
+        </section>
+
         <section id="contact" class="contact-section section-fade-in">
             <div class="section-header">
                 <h2>Get In Touch</h2>
-                <p>Have a question or want to work together? Drop me a message!</p>
+                <p>Open to backend, software engineering, and AI-focused opportunities. If you want to collaborate, let's talk.</p>
             </div>
 
             <div class="contact-form-container">
@@ -227,27 +344,44 @@
                     </button>
                 </form>
             </div>
+
             <div class="social-media">
-                <p>Or connect with me on social media:</p>
+                <p>Or connect directly through these profiles:</p>
                 <div class="social-links">
-                    <a href="https://wa.me/6375711968" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
-                    <a href="mailto:sumitbeniwal906@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
-                    <a href="https://github.com/sumitbeniwal111" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/sumitbeniwal1/" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://wa.me/916375711968" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp social-icon"></i></a>
+                    <a href="mailto:sumitbeniwal906@gmail.com" aria-label="Email"><i class="fas fa-envelope social-icon"></i></a>
+                    <a href="https://github.com/sumitbeniwal111" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github social-icon"></i></a>
+                    <a href="https://www.linkedin.com/in/sumitbeniwal1/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin social-icon"></i></a>
                 </div>
             </div>
-        </section>
 
+            <div class="profile-grid">
+                <a href="https://github.com/sumitbeniwal111" target="_blank" rel="noopener noreferrer" class="profile-link-card">
+                    <h3>GitHub</h3>
+                    <p>Explore my repositories and project work.</p>
+                </a>
+                <a href="https://www.linkedin.com/in/sumitbeniwal1/" target="_blank" rel="noopener noreferrer" class="profile-link-card">
+                    <h3>LinkedIn</h3>
+                    <p>See my professional journey and internship experience.</p>
+                </a>
+                <a href="https://leetcode.com/u/Sumitbeniwal111/" target="_blank" rel="noopener noreferrer" class="profile-link-card">
+                    <h3>LeetCode</h3>
+                    <p>Track my coding practice and contest profile.</p>
+                </a>
+                <a href="https://drive.google.com/file/d/1xsaAeH2RsGnK9sHBePPIM_f4yeah1NYy/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="profile-link-card">
+                    <h3>Resume</h3>
+                    <p>View the latest resume with projects, experience, and achievements.</p>
+                </a>
+            </div>
+        </section>
     </main>
 
-    <!-- ================= FOOTER ================= -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 Sumit Beniwal. All rights reserved.</p>
+            <p>&copy; 2026 Sumit Beniwal. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- Toast -->
     <div id="toast"></div>
 
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
